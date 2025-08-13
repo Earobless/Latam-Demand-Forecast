@@ -1,56 +1,57 @@
 # Latam Demand Forecast
 
-Repositorio que contiene proyectos relacionados con la predicción de demanda aérea y optimización de precios, enfocados en LATAM Airlines.
+Repositorio de proyectos de predicción de demanda aérea y optimización de precios, enfocados en LATAM Airlines.
 
 ---
 
-## Proyecto principal: Predicción de demanda aérea y optimización de precios
+## Proyecto principal: Predicción de demanda y optimización de precios
 
 **Descripción:**  
-Este proyecto utiliza modelos de redes neuronales artificiales (ANN) para predecir la demanda de vuelos en rutas internacionales de LATAM Airlines. Además, incluye un modelo opcional de aprendizaje por refuerzo (RL) para la optimización dinámica de precios basada en la demanda y la ocupación.
+Pipeline completo de Revenue Management para LATAM AIRLINES CHILE que combina:  
+- **ANN (Redes Neuronales Artificiales):** Predice la demanda de vuelos por ruta y mes.  
+- **Q-learning:** Optimiza precios dinámicamente según la demanda y la ocupación.  
 
-El proyecto está inspirado en la postulación que envié a LATAM para el cargo de Analista Revenue Management, buscando mostrar un caso práctico relacionado con las funciones del puesto.
+Incluye **carga y limpieza de datos**, **preprocesamiento**, entrenamiento de la ANN, simulación de decisiones de precios y generación de **estimaciones de ingresos y precios finales**. Basado en un caso práctico para el cargo de Analista Revenue Management.
 
 **Tecnologías:**  
-- Python  
-- Pandas, NumPy  
-- Scikit-learn  
-- TensorFlow (Keras)  
-- Matplotlib, Seaborn  
+Python 3.10, Pandas, NumPy, Scikit-learn, TensorFlow (Keras), Matplotlib, Seaborn
 
 **Datos:**  
-Los datos provienen de fuentes públicas, principalmente informes estadísticos de tráfico aéreo de la DGAC (Dirección General de Aeronáutica Civil de Chile).
+Informes públicos de tráfico aéreo de la DGAC (Chile) para LATAM AIRLINES CHILE, año 2024.
 
-**Estructura del repositorio:**  
-- `datos_latam_2024/`: Archivos Excel con datos mensuales descargados de DGAC.  
-- `Modelo-Latam.py`: Código principal con la implementación del modelo ANN y RL.  
-- Otros scripts y notebooks relacionados.
-
----
-
-## Cómo usar el proyecto
-
-1. Clonar el repositorio  
-2. Instalar las dependencias (recomendado crear un entorno virtual)  
-3. Ejecutar el script `Modelo-Latam.py` para entrenar y evaluar el modelo.  
+**Estructura:**  
+- `datos_latam_2024/` → Archivos Excel de DGAC.  
+- `Modelo-Latam.py` → Pipeline de limpieza, ANN y Q-learning.  
+- `resultados_latam_2024_simulacion.csv` → Resultados con demanda estimada, precios y ingresos.
 
 ---
 
-## Próximos pasos
+## Uso
 
-- Integrar modelos más complejos y robustos de aprendizaje por refuerzo para optimización de precios.  
-- Incorporar más fuentes de datos y mejorar la limpieza y preprocesamiento."Actualmente me encuentro trabajando en esto"
-- Implementar visualizaciones interactivas para análisis de resultados.
+1. Clonar el repositorio.  
+2. Crear un entorno virtual con Python 3.10.  
+3. Instalar dependencias:  
+   ```bash
+   pip install pandas numpy scikit-learn tensorflow matplotlib seaborn
+Ejecutar el script principal:
 
----
+bash
+Copiar
+Editar
+python Modelo-Latam.py
+Consultar los resultados en resultados_latam_2024_simulacion.csv.
 
-## Contacto
+Próximos pasos
+Extender modelos de aprendizaje por refuerzo para optimización de precios.
 
-Para dudas o comentarios, contactarme a: alejandrarobles2509@gmail.com  
-Perfil GitHub: [https://github.com/Earobless](https://github.com/Earobless)
-perfil Linkedin: www.linkedin.com/in/erika-alejandra-robles-sosa-082600262
+Incluir más fuentes de datos históricas.
 
----
+Crear visualizaciones interactivas para análisis de resultados.
 
-**Proyecto desarrollado por Erika Alejandra Robles**  
+Contacto
+Email: alejandrarobles2509@gmail.com
+GitHub: https://github.com/Earobless
+LinkedIn:www.linkedin.com/in/erika-alejandra-robles-sosa-082600262
+
+Erika Alejandra Robles Sosa
 Diplomado en Ciencia de Datos para las Finanzas - Universidad de Chile, 2025
