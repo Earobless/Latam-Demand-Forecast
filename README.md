@@ -48,10 +48,13 @@ Incluir más fuentes de datos históricas.
 
 Crear visualizaciones interactivas para análisis de resultados.
 
-Contacto
-Email: alejandrarobles2509@gmail.com
-GitHub: https://github.com/Earobless
-LinkedIn:www.linkedin.com/in/erika-alejandra-robles-sosa-082600262
+## Contacto
 
-Erika Alejandra Robles Sosa
+Para dudas o comentarios, contactarme a: alejandrarobles2509@gmail.com  
+Perfil GitHub: [https://github.com/Earobless](https://github.com/Earobless)
+perfil Linkedin: www.linkedin.com/in/erika-alejandra-robles-sosa-082600262
+
+---
+
+**Proyecto desarrollado por Erika Alejandra Robles Sosa**  
 Diplomado en Ciencia de Datos para las Finanzas - Universidad de Chile, 2025
